@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import AuthContext from '../Storge/Auth-Context';
+import AuthContext from '../Store/Auth-Context';
 import classes from './Navigation.module.css';
 
 const Navigation = (props) => {
