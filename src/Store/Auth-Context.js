@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 
 const AuthContext = React.createContext({
@@ -39,5 +40,6 @@ export const AuthContextProvider = (props) => {
     </AuthContext.Provider>
   );
 };
+
 
 export default AuthContext;

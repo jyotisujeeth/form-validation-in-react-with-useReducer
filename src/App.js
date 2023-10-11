@@ -1,23 +1,20 @@
-import React, {useContext} from 'react';
+import React, { useContext } from "react";
 
-import Login from './components/Login/Login';
-import Home from './components/Home/Home';
-import MainHeader from './components/MainHeader/MainHeader';
-import AuthContext from './components/Store/Auth-Context';
-// import AuthContext from "./store/auth-context";
+import Login from "./components/Login/Login";
+import Home from "./components/Home/Home";
+import MainHeader from "./components/MainHeader/MainHeader";
+import AuthContext from "../store/Auth-Context";
+// C:\Users\jyoti\Desktop\useereducer\src\Store\Auth-Context.js
 function App() {
- const ctx = useContext(AuthContext);
-
+  const ctx = useContext(AuthContext);
 
   return (
-     <React.Fragment>
-    
-        <MainHeader   />
-        <main>
-          {!ctx.isLoggedIn && <Login  />}
-          {ctx.isLoggedIn && <Home  />}
-        </main>
-    
+    <React.Fragment>
+      <MainHeader />
+      <main>
+        {!ctx.isLoggedIn && <Login />}
+        {ctx.isLoggedIn && <Home />}
+      </main>
     </React.Fragment>
   );
 }

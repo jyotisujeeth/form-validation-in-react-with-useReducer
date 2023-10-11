@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useContext } from "react";
 
-import Card from '../UI/Card/Card';
-import Button from '../UI/Button/Button'
-import classes from './Home.module.css';
-import AuthContext from '../Store/Auth-Context';
+import Card from "../UI/Card/Card";
+import Button from "../UI/Button/Button";
+import classes from "./Home.module.css";
+import AuthContext from "../../store/Auth-Context";
 
 const Home = (props) => {
-const authCtx = useContext(AuthContext);
+  const authCtx = useContext(AuthContext);
 
   return (
     <Card className={classes.home}>
